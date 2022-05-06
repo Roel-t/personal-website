@@ -1,0 +1,62 @@
+body{
+    margin:0;
+}
+.nav-content{
+    display: flex;
+    padding: 2rem 1rem;
+}
+.primary-color-text{
+    color:#313E40;
+}
+.primary-color-theme{
+    color: #8F9AD9;
+}
+.secondary-color-theme{
+    color: #5066DF;
+}
+.primary-background-color-theme{
+    background-color: #8F9AD9;
+}
+.nav-logo{
+    padding: 0rem 5rem;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 18rem;
+    padding-left: 1rem;
+}
+.nav-content a{
+    text-decoration: none;
+}
+.not-found{
+    text-align: center;
+}
+.not-found a{
+    text-decoration: none;
+}
+.footer{
+    color: black;
+    padding: 2rem 1rem;
+}
+.footer-links{
+    fill: black;
+}
+.grid-row{
+    padding-top: 1rem;
+}
+.grid-row-1{
+    padding: 1rem 0;
+}
+.grid-row-2{
+    padding: 2rem 0;
+}
+.grid-row-3{
+    padding: 3rem 0;
+}
+.grid-row-4{
+    padding: 4rem 0;
+}
+.grid-row-5{
+    padding: 5rem 0;
+}

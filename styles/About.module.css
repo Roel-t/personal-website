@@ -1,0 +1,17 @@
+.card{
+  padding: 2rem 0;
+}
+.cardContent{
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    height: 18rem;
+    width: 100%;
+    border-radius: 10%;
+}
+.cardLine{
+    margin: .25rem 0rem 1.5rem;
+    height: 1rem;
+    width: 20%;
+    border-top: 1px #8f9ad9 solid;
+ 
+}

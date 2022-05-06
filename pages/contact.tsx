@@ -3,7 +3,6 @@ import { Button, Container, Grid, InputLabel, Paper, TextareaAutosize, TextField
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Contact.module.css';
-import axios from 'axios';
 import { useState } from 'react';
 
 interface form {

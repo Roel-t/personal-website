@@ -3,17 +3,24 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 import {IconButton, Theme } from '@mui/material';
 import CustomLink from './CustomLink';
-import { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import { CSSTransition } from 'react-transition-group';
+import { useRouter,Router } from "next/dist/client/router";
 
 type Props = {}
 
 const Navbar = (props:Props) => {
-
+    const router = useRouter();
     const [navMenuShow, setNavMenuShow] = useState<boolean>(false);
 
     const onNavBtnClickHandler = ():void =>{
         setNavMenuShow(!navMenuShow);
     }
+    
+    Router.events.on('routeChangeComplete', () => {
+        if(navMenuShow)
+            setNavMenuShow(false);
+    })
 
     const matches = useMediaQuery((theme:Theme) => theme.breakpoints.up('md'));
     return (
@@ -57,11 +64,39 @@ const Navbar = (props:Props) => {
                 </IconButton>
             </div>)}
         </div>
-        {navMenuShow ? 
-        (<div style={{position:"fixed",width:"100%",height:"100%",backgroundColor:"red"}}>
-
-        </div>)
-        :(<></>)}
+    
+      
+        <CSSTransition in={navMenuShow}
+        timeout={500}
+        classNames={"nav-menu-overlay"}
+        unmountOnExit={true}
+        mountOnEnter={true} >
+            <div className="nav-menu-overlay">
+                <div className="nav-links-list">
+                    <div className="nav-home-list">
+                        <CustomLink href="/" onClick={onNavBtnClickHandler} variant="subtitle1" className="primary-color-text">
+                        <Typography variant='h5' fontWeight={600}>
+                            Home
+                        </Typography>
+                        </CustomLink>
+                    </div>
+                    <div className="nav-about-list">
+                        <CustomLink href="/about" onClick={onNavBtnClickHandler} variant="subtitle1" className="primary-color-text">
+                        <Typography variant='h5' fontWeight={600}>
+                            About
+                        </Typography> 
+                        </CustomLink>
+                    </div>
+                    <div className="nav-contact-list">
+                        <CustomLink href="/contact" onClick={onNavBtnClickHandler} variant="subtitle1" className="primary-color-text">
+                        <Typography variant='h5' fontWeight={600}>
+                            Contact
+                        </Typography>
+                        </CustomLink>
+                    </div>
+                </div>
+            </div>
+        </CSSTransition>  
     </section>);
 }
  

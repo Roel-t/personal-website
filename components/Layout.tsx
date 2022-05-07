@@ -29,8 +29,22 @@ const Layout = ({children}:Props) => {
                     <link rel="canonical" href="https://www.roeltijerina.com/"/>
                     {/* Google */}
                     <meta name="author" content="Roel Tijerina"/>
-                    <meta name="description" content="Roel Tijerina's personal website. Software engineer based from Texas working as a full stack engineer at IBM. Currently using React, NodeJs, and expressJs." />
+                    <meta itemProp="name" content="Roel Tijerina - Software Engineer"/>
+                    <meta name="description" content="Roel Tijerina's personal website. Software engineer based from Texas working as a full stack engineer at IBM. Currently using React, NodeJs, and ExpressJs." />
                     <meta itemProp="image" content="/site-preview.png"/>
+                    {/* <Facebook */}
+                    <meta property="og:title" content="Roel Tijerina - Software Engineer"/>
+                    <meta property="og:type" content="website"/>
+                    <meta property="og:url" content="https://roel.tijerina.com"/>
+                    <meta property="og:image" content="/site-preview.png"/>
+                    <meta property="og:description" content="Roel Tijerina's personal website. Software engineer based from Texas working as a full stack engineer at IBM. Currently using React, NodeJs, and ExpressJs."/>
+                    {/* Twitter */}
+                    <meta name="twitter:card" content="summary"/>
+                    <meta name="twitter:site" content=""/>
+                    <meta name="twitter:title" content="Roel Tijerina - Software Engineer"/>
+                    <meta name="twitter:description" content="Roel Tijerina's personal website. Software engineer based from Texas working as a full stack engineer at IBM. Currently using React, NodeJs, and ExpressJs."/>
+                    <meta name="twitter:image" content="/site-preview.png"/>
+
 
                     <link rel="icon" href="/favicon.ico" />
                     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"/> 

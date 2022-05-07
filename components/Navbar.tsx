@@ -3,9 +3,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 import {IconButton, Theme } from '@mui/material';
 import CustomLink from './CustomLink';
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { useRouter,Router } from "next/dist/client/router";
+import Hamburger from 'hamburger-react'
 
 type Props = {}
 
@@ -16,7 +17,7 @@ const Navbar = (props:Props) => {
     const onNavBtnClickHandler = ():void =>{
         setNavMenuShow(!navMenuShow);
     }
-    
+
     Router.events.on('routeChangeComplete', () => {
         if(navMenuShow)
             setNavMenuShow(false);
@@ -59,8 +60,8 @@ const Navbar = (props:Props) => {
             </div>)
             :
             (<div className="nav-menu"> 
-                <IconButton color="inherit" onClick={onNavBtnClickHandler} aria-label="menu" sx={{ mr: 2 }}>
-                    <MenuIcon />
+                <IconButton color="inherit" onClick={onNavBtnClickHandler} aria-label="menu" sx={{ mr: 2,padding:0 }}>
+                    <Hamburger rounded toggled={navMenuShow} size={24} ></Hamburger>
                 </IconButton>
             </div>)}
         </div>

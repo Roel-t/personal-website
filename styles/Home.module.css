@@ -3,7 +3,7 @@
     text-align: -webkit-center;
 }
 .cardContent{
-    border-radius: 10%;
+    border-radius: 10%!important;
     height: 20rem;
     max-width: 25rem;
 }

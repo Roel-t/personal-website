@@ -6,7 +6,7 @@
     text-align: -webkit-center;
     height: 18rem;
     width: 100%;
-    border-radius: 10%;
+    border-radius: 10%!important;
 }
 .cardLine{
     margin: .25rem 0rem 1.5rem;

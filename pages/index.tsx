@@ -12,8 +12,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Roel Tijerina | Home</title>
       </Head>
-      <Grid container className="grid-row-5" alignItems="center">
-        <Grid item xs={12} md={6} lg={6}>
+      <Grid container className="grid-row-3" alignItems="center">
+        <Grid item xs={12} md={6} lg={6} textAlign="center">
             <Typography variant="h1" padding={2} fontWeight={800}>
                 Web Developer
             </Typography>
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             </Typography>
         </Grid>
         <Grid item xs={12} md={6} lg={6}>
-          <div style={{display:"flex",justifyContent:"flex-end"}}>
+          <div className={styles.profileDiv}>
               <CardMedia
                 sx={{maxWidth:"25rem",height:"auto"}}
                 className={styles.profilePic}
@@ -56,10 +56,10 @@ const Home: NextPage = () => {
             </Typography>
           </div>
           <div>
-            <Chip icon={<Computer sx={{fill: "black"}}/>} label="Web app" sx={{marginRight:1}} />
-            <Chip icon={<CodeOff sx={{fill: "black"}}/>} label="Full stack" sx={{marginRight:1}}/>
-            <Chip icon={<Icon><img alt="react" src="reactIcon.png" height={25} width={25} /></Icon>} label="React" sx={{marginRight:1}}/>
-            <Chip icon={<Javascript sx={{fill:"black"}}/>} label="NodeJs" sx={{marginRight:1}}/>
+            <Chip className={styles.chipIcon} icon={<Computer sx={{fill: "black"}}/>} label="Web app" />
+            <Chip className={styles.chipIcon} icon={<CodeOff sx={{fill: "black"}}/>} label="Full stack"/>
+            <Chip className={styles.chipIcon} icon={<Icon><img alt="react" src="reactIcon.png" height={25} width={25} /></Icon>} label="React"/>
+            <Chip className={styles.chipIcon} icon={<Javascript sx={{fill:"black"}}/>} label="NodeJs"/>
           </div>
           <div className="grid-row">
             <Typography variant={"body1"}>
@@ -76,8 +76,8 @@ const Home: NextPage = () => {
             </Typography>
           </div>
           <div>
-            <Chip icon={<Devices sx={{fill: "black"}}/>} label="Cross app" sx={{marginRight:1}} />
-            <Chip icon={<Icon><img alt="react icon" src="reactIcon.png" height={25} width={25} /></Icon>} label="React native" sx={{marginRight:1}}/>
+            <Chip className={styles.chipIcon} icon={<Devices sx={{fill: "black"}}/>} label="Cross app"/>
+            <Chip className={styles.chipIcon} icon={<Icon><img alt="react icon" src="reactIcon.png" height={25} width={25} /></Icon>} label="React native"/>
           </div>
           <div className="grid-row">
             <Typography variant={"body1"}>

@@ -2,6 +2,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Head from "next/head";
 import { createTheme, responsiveFontSizes,ThemeProvider } from '@mui/material/styles';
+import { useState } from "react";
 
 let theme = createTheme({
     typography: {
@@ -17,6 +18,9 @@ theme = responsiveFontSizes(theme);
 type Props = {children?:any}
 
 const Layout = ({children}:Props) => {
+
+    const [navMenuShow, setNavMenuShow] = useState<boolean>(false);
+
     return (  
             <ThemeProvider theme={theme}>
                 <Head>
@@ -34,7 +38,9 @@ const Layout = ({children}:Props) => {
                 </Head>
                 <div className="content">
                     <Navbar/>
-                    {children}
+                    <div className="page-container">
+                        {children}
+                    </div>
                     <Footer/>
                 </div>
             </ThemeProvider>   

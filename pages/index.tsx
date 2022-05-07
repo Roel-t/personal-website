@@ -18,7 +18,7 @@ const Home: NextPage = () => {
                 Web Developer
             </Typography>
             <Typography variant="h6" padding={2} paddingTop={6}>
-              Hello! Currently a Web developer at <Link className="secondary-color-theme" underline="hover" href="https://www.ibm.com/us-en?ar=1" target={"_blank"} variant="h6">IBM</Link> working on enhancing customers' experience.
+              Hello! Currently a Web developer at <Link className="secondary-color-theme" underline="hover" href="https://www.ibm.com/us-en?ar=1" target={"_blank"} variant="h6">IBM</Link> working on enhancing customers&apos; experience.
             </Typography>
         </Grid>
         <Grid item xs={12} md={6} lg={6}>

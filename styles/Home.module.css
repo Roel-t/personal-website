@@ -1,6 +1,7 @@
 .card{
     text-align: -moz-center;
     text-align: -webkit-center;
+    width: 100%;
 }
 .cardContent{
     border-radius: 10%!important;

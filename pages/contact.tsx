@@ -98,7 +98,7 @@ const Contact: NextPage = () => {
         <Grid container justifyContent={"center"} className="grid-row">
             <Grid item xs={4} md={6} lg={6} textAlign={"center"}>
                 <Typography variant="h5">
-                    You can also send me a message through LinkedIn!
+                    You can also send me a message through LinkedIn
                 </Typography>
             </Grid>
         </Grid>

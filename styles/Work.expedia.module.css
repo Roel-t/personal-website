@@ -1,0 +1,11 @@
+.expediaContainer{
+    padding: 0rem;
+    max-width: none;
+}
+.expediaSection{
+    display: flex;
+    justify-content: center;
+}
+.expediaSubSection{
+    max-width: 60%;
+}

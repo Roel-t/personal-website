@@ -6,7 +6,7 @@ const Mth: NextPage = () => {
     return (
         <Container>
         <Head>
-          <title>Roel Tijerina | MTH</title>
+          <title>Roel Tijerina | Research</title>
         </Head>
         <Grid container className="grid-row-1" alignItems={"center"}>
             <Grid item xs={12} md={12} lg={12} sx={{textAlign:"center"}}>     

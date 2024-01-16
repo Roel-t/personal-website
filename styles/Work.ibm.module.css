@@ -1,0 +1,15 @@
+.ibmContainer{
+    padding: 0rem;
+    max-width: none;
+}
+.ibmSection{
+    display: flex;
+    justify-content: center;
+}
+.ibmSubSection{
+    max-width: 60%;
+}
+.ibmImage{
+    display: flex;
+    justify-content: center;
+}

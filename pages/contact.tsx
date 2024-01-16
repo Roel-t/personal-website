@@ -60,45 +60,7 @@ const Contact: NextPage = () => {
                     Want to reach me?
                 </Typography>
                 <Typography variant="h6">
-                    Send me a message and I will get back to you as soon as I can!
-                </Typography>
-            </Grid>
-            <Grid item xs={12} md={6} lg={6} textAlign={"center"} className={styles.contactContainer}>
-                <Paper elevation={16}>
-                    <Grid container spacing={3} className={styles.paperContainer} sx={{padding:4}}>
-                        <Grid item xs={12}>
-                            <TextField required name="name" error={errors.name} id="name-contact" label="Name" value={form.name}
-                            className={styles.textField} onChange={(e)=>{setForm({...form,name:e.target.value})}}/>
-
-                        </Grid>
-                        <Grid item xs={12}>
-                        <TextField required name="email" error={errors.email} id="email-contact" label="Email" value={form.email}
-                        className={styles.textField} onChange={(e)=>{setForm({...form,email:e.target.value})}}/>
-
-                        </Grid>
-                        <Grid item xs={12}> 
-                        <TextField id="subject-contact" label="Subject" value={form.subject}
-                        className={styles.textField} onChange={(e)=>{setForm({...form,subject:e.target.value})}}/>
-
-                        </Grid>
-                        <Grid item xs={12}> 
-                        <TextField required error={errors.message} id="subject-message" label="Message" className={styles.textArea} value={form.message}  
-                        multiline={true} rows={5} onChange={(e)=>{setForm({...form,message:e.target.value})}}/>
-                        </Grid>
-                        <Grid item xs={2}>
-                            <Button variant="contained" onClick={SendBtnHandler}>
-                                Send
-                            </Button>
-                        </Grid>
-                        
-                    </Grid>  
-                </Paper>
-            </Grid>
-        </Grid>
-        <Grid container justifyContent={"center"} className="grid-row">
-            <Grid item xs={4} md={6} lg={6} textAlign={"center"}>
-                <Typography variant="h5">
-                    You can also send me a message through LinkedIn
+                    Send me a message through LinkedIn and I will get back to you as soon as I can!
                 </Typography>
             </Grid>
         </Grid>

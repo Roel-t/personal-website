@@ -1,9 +1,7 @@
-import { Container, Grid, Typography, Card, Chip, Icon} from '@mui/material';
-import { Computer,Devices,Javascript, Laptop, Palette, PhoneIphone } from '@mui/icons-material';
-import type { NextPage } from 'next';
+import { Container, Grid, Typography, Card } from '@mui/material';
+import { Laptop, Palette, PhoneIphone } from '@mui/icons-material';
 import Head from 'next/head';
 import styles from '../styles/About.module.css';
-
 
 type Props = {}
 
@@ -13,13 +11,6 @@ const About = (props: Props) => {
         <Head>
           <title>Roel Tijerina | About</title>
         </Head>
-        <Grid container className="grid-row-1" alignItems={"center"}>
-            <Grid item xs={12} md={12} lg={12} sx={{textAlign:"center"}}>     
-                <Typography variant="h6" sx={{padding:".5rem .5rem"}}>
-                    
-                </Typography>
-            </Grid>
-        </Grid>
         <Grid container className="grid-row-1" alignItems={"center"} rowSpacing={1} columnSpacing={{ sm: 4, md: 8,lg:12 }}>
             <Grid item xs={12} sm={6} md={4} lg={4} className={styles.card}>
                 <Card raised elevation={6} className={styles.cardContent}>
